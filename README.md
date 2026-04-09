@@ -17,3 +17,14 @@ Using custom **4-bit block-wise quantization** and **bit-shifting packing**, I s
 git clone [https://github.com/yassin607/Nero-Quantizer.git](https://github.com/yassin607/Nero-Quantizer.git)
 cd Nero-Quantizer
 pip install -r requirements.txt
+
+🚀 Usage
+1. Convert GGUF/Ollama to Nero Format
+Bash
+python convert_gguf_to_nero.py --input path/to/model.gguf --output Nero-Model.safetensors
+2. Verify and Test Weights
+Bash
+python verify_weights.py --model Nero-Model.safetensors
+3. Run Ollama Demo
+Bash
+python demo_ollama_blobs.py
